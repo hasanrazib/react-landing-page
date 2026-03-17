@@ -11,7 +11,7 @@ import { Navigation, Pagination, Autoplay } from 'swiper/modules';
 
 const Slider = () => {
   return (
-    <section className="slider-container">
+    <section className="slider-container" id="home">
       <Swiper
         modules={[Navigation, Pagination, Autoplay]}
         spaceBetween={50}
@@ -21,23 +21,42 @@ const Slider = () => {
         autoplay={{ delay: 3000 }}
         className="swiper-full"
       >
+        {/* Slide 1 */}
         <SwiperSlide>
           <div className="slide slide-1">
-            <h1>Slide 1: Welcome to My Landing Page</h1>
+            <div className="slide-content">
+              <h1>Web Development</h1>
+              <p>
+                We build fast, responsive, and modern websites using the latest technologies.
+              </p>
+            </div>
           </div>
         </SwiperSlide>
 
+        {/* Slide 2 */}
         <SwiperSlide>
           <div className="slide slide-2">
-            <h1>Slide 2: Modern React Development</h1>
+            <div className="slide-content">
+              <h1>UI/UX Design</h1>
+              <p>
+                Clean design, engaging visuals, and user-friendly experiences across all devices.
+              </p>
+            </div>
           </div>
         </SwiperSlide>
 
+        {/* Slide 3 */}
         <SwiperSlide>
           <div className="slide slide-3">
-            <h1>Slide 3: Fast and Responsive</h1>
+            <div className="slide-content">
+              <h1>Digital Strategy</h1>
+              <p>
+                Grow your brand with smart digital solutions and effective strategies.
+              </p>
+            </div>
           </div>
         </SwiperSlide>
+
       </Swiper>
     </section>
   );

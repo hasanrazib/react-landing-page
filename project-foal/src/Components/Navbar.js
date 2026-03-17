@@ -1,12 +1,16 @@
 import React, { useState } from "react";
 import "./Navbar.css";
+import logo from "../assets/logo.png"; // 👈 import logo
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <div className="logo">Foal</div>
+      
+      <div className="logo">
+        <img src={logo} alt="Foal Logo" />
+      </div>
 
       <div
         className={`hamburger ${menuOpen ? "active" : ""}`}

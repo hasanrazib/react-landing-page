@@ -3,16 +3,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-color: #333;
-  color: white;
+  background-color: #fefefe;
+  color: rgb(15, 14, 14);
   position: sticky;
   top: 0;
   z-index: 1000;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
+.logo img {
+  height: 40px;
+  width: auto;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -26,7 +27,7 @@
 }
 
 .nav-links a {
-  color: white;
+  color: rgb(14, 14, 14);
   text-decoration: none;
   font-weight: bold;
 }

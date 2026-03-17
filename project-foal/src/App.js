@@ -1,16 +1,19 @@
 import React from "react";
 import Navbar from "./Components/Navbar";
-import About from "./Components/About";     
-import './App.css';
+import Slider from "./Components/Slider";
+import About from "./Components/About";
+import Contact from "./Components/Contact";
+import "./App.css";
 
-function App(){
-  return(
+function App() {
+  return (
     <div className="App">
-      <Navbar/>
-      <About/>
+      <Navbar />
+      <Slider />
+      <About />
+      <Contact />
     </div>
   );
-
 }
 
 export default App;
